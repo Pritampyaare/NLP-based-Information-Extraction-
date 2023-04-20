@@ -1,0 +1,4 @@
+FROM $com.sap.sles.base
+RUN pip3 install --user spacy
+RUN pip3 install --user parsedatetime
+RUN python3 -m spacy download en_core_web_sm
